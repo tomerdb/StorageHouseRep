@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/StorageHouseRep/static/css/main.6130e160.chunk.css",
+    "main.js": "/StorageHouseRep/static/js/main.5234c136.chunk.js",
+    "main.js.map": "/StorageHouseRep/static/js/main.5234c136.chunk.js.map",
+    "runtime-main.js": "/StorageHouseRep/static/js/runtime-main.e223582b.js",
+    "runtime-main.js.map": "/StorageHouseRep/static/js/runtime-main.e223582b.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/StorageHouseRep/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.f2936d3a.chunk.js": "/StorageHouseRep/static/js/2.f2936d3a.chunk.js",
+    "static/js/2.f2936d3a.chunk.js.map": "/StorageHouseRep/static/js/2.f2936d3a.chunk.js.map",
+    "index.html": "/StorageHouseRep/index.html",
+    "precache-manifest.59399c8e01837a0ceb024ebaa871d3e6.js": "/StorageHouseRep/precache-manifest.59399c8e01837a0ceb024ebaa871d3e6.js",
+    "service-worker.js": "/StorageHouseRep/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/StorageHouseRep/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.6130e160.chunk.css.map": "/StorageHouseRep/static/css/main.6130e160.chunk.css.map",
+    "static/js/2.f2936d3a.chunk.js.LICENSE.txt": "/StorageHouseRep/static/js/2.f2936d3a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e223582b.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.f2936d3a.chunk.js",
+    "static/css/main.6130e160.chunk.css",
+    "static/js/main.5234c136.chunk.js"
+  ]
+}
