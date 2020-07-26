@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+                       /* HomePage */
+.HomePage{
+  background-color: lightgray;
+  margin: auto;
+  padding: 10px;
+
+
+
+  
+}
+.HomeBtn{
+  background-color: rgb(69, 100, 238);
+  border-radius: 6px;
+  border: 1px solid blue;
+  margin-bottom: 15px;
+  color: white;
+  font-weight:bolder;
+  font-size: 18px;
+  width: 170px;
+  height: 40px;
+}
+               /* SignUp */
+.SignUp{
+  margin: auto;
+  padding: 10px;
+
+  background-color: lightgray;
+  text-align: left;
+}
+.SignUpNumber{
+  margin-left: 40px;
+  
+}
+.SignRadio{
+  margin-right: 20px;
+  margin-left: 15px;
+}
+.SignSpan{
+  margin-right: 18px;
+  margin-left: 10px;
+  
+}
+/* Login */
+
+.Login{
+  background-color: lightgray;
+  margin: auto;
+  padding: 10px;
+  
+}
+.LoginD{
+  margin-left:2px;
+  margin-top: 2px;
+}
+.LoginDD{
+  padding-right:10px;
+  margin-left: 15px;
+}
+.Products{
+  border:1px solid black;
+  margin-top:4px;
+  width:40%;
+  text-align:left;
+  background-color: rgb(230, 230, 230);
+}
+/* Manager */
+tr,
+td{
+  border: 1.5px solid rgb(148, 147, 147);
+  text-align: center;
+  height: 30px;
+  width: 200px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  margin: 0 auto;
+  background-color:lightgray;
+  margin-top: 100px;
+} 
+.TableHeader{
+  font-weight:700;
+  font-size: 14px;
+  
+}
+
+/* general */
+.PrimeBtn{
+  background-color: rgba(116, 116, 116, 0.644);
+  border-radius: 7px;
+  width: 120px;
+  height: 35px;
+  color:white;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 18px;
+  border: 1.5px solid black;
+}
+
+html, body, body > div, .app {
+  height: 100%;
+  background-color: lightgray;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
