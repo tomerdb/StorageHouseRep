@@ -11,13 +11,13 @@ export default function Login1(props) {
     const ChangeManger=()=>{
         if(Number=='99999'){
             setLogin('manager')
-            setNumber('+_)(?><<>')
+            setNumber(null)
         }
     }
     const valid = () =>{
         var counter = 0;
         var index = 0;
-        if(Number=='+_)(?><<>'){}
+        if(Number==null){}
         else{
 
             props.worker.map((e,i)=>{
