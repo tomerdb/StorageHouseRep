@@ -2,17 +2,17 @@ import React,{useState} from 'react'
 import {Link} from 'react-router-dom';
 export default function SignUp(props) {
 
-    const [Number, setNumber] = useState('');
-    const [Name, setName] = useState('');
-    const [Drive, setDrive] = useState('no');
+    const [number, setNumber] = useState('');
+    const [name, setName] = useState('');
+    const [drive, setDrive] = useState('no');
 
 
     const valid = () =>{
         
         var counter = 0;
-        if(NumberCounter==0&&Name.length>4&&SpaceCounter!=0&&Number.length==5&&LetterCounter==0&&Name.charAt(0)!=' '&&Name.charAt(1)!=' '&&Name.charAt(2)!=' '&&Name.charAt(3)!=' '){
+        if(numberCounter==0&&name.length>4&&spaceCounter!=0&&number.length==5&&letterCounter==0&&name.charAt(0)!=' '&&name.charAt(1)!=' '&&name.charAt(2)!=' '&&name.charAt(3)!=' '){
             props.worker.map((e)=>{
-                if(e.number==Number){
+                if(e.number==number){
                     counter++
                 }
             })
@@ -20,7 +20,7 @@ export default function SignUp(props) {
         else{return alert('Error')
         }
         if(counter==0){
-            props.addWorker(Number,Name,Drive,0,0)
+            props.addWorker(number,name,drive,0,0)
             
         }
         else{
@@ -29,30 +29,30 @@ export default function SignUp(props) {
 
     }
     const numberValid = () => {
-        if(Number.length!=5){
+        if(number.length!=5){
             return <p id='numberSignup' style={{color:'red',fontSize:'12px'}}>the number must be with 5 digits.</p>
         }
         else{
             return<p id='numberSignup'> </p>
         }
     }
-    var NumberCounter = 0;
-    var SpaceCounter = 0;
-    var LetterCounter = 0;
-    const nameValid = (N) => {
-        for(let index = 0; index < N.length; index++){
-            if(N.charAt(index)>='0'&&N.charAt(index)<='9'){
-                NumberCounter++
+    var numberCounter = 0;
+    var spaceCounter = 0;
+    var letterCounter = 0;
+    const nameValid = (e) => {
+        for(let index = 0; index < e.length; index++){
+            if(e.charAt(index)>='0'&&e.charAt(index)<='9'){
+                numberCounter++
             }
-            else if(N.charAt(index)==' '){
-                SpaceCounter++
+            else if(e.charAt(index)==' '){
+                spaceCounter++
             }
-            else if(N.charAt(index)>'z'||N.charAt(index)<'a'&&N.charAt(index)>'Z'||N.charAt(index)<'A'){
-                LetterCounter++
+            else if(e.charAt(index)>'z'||e.charAt(index)<'a'&&e.charAt(index)>'Z'||e.charAt(index)<'A'){
+                letterCounter++
             }
         }
 
-        if(NumberCounter!=0||N.length<5||LetterCounter!=0||N.charAt(0)==' '||N.charAt(1)==' '||N.charAt(2)==' '||N.charAt(3)==' '||SpaceCounter==0){
+        if(numberCounter!=0||e.length<5||letterCounter!=0||e.charAt(0)==' '||e.charAt(1)==' '||e.charAt(2)==' '||e.charAt(3)==' '||spaceCounter==0){
             return <p id='nameSignup' style={{color:'red',fontSize:'12px'}}>the name must contain minimum 4 characters.</p>
         }
         else{
@@ -69,9 +69,9 @@ export default function SignUp(props) {
             <div style={{marginLeft:'40px'}}>
 
             <span>NO.</span> <input className='SignUpNumber' type='number' onChange={(e)=>{setNumber(e.target.value)}}/>
-            {numberValid(Number)}
+            {numberValid(number)}
             <span>FullName</span> <input onChange={(e)=>{setName(e.target.value)}}/><br/>
-            {nameValid(Name)}
+            {nameValid(name)}
             <p>Forklift truck</p>
             <input className='SignRadio' type='radio' name='1' onClick={()=>{setDrive('yes')}}/>
             <input className='SignRadio' type='radio' defaultChecked name='1' onClick={()=>{setDrive('no')}}/><br/>

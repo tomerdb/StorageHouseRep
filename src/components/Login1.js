@@ -2,14 +2,14 @@ import React,{useState}from 'react'
 import {Link} from 'react-router-dom';
 
 export default function Login1(props) {
-    const [Login, setLogin] = useState('login')
+    const [login, setLogin] = useState('login')
     const flagChange = () =>{
         props.changeFlag()
     }
 
-    const [Number, setNumber] = useState('');
+    const [number, setNumber] = useState('');
     const ChangeManger=()=>{
-        if(Number=='99999'){
+        if(number=='99999'){
             setLogin('manager')
             setNumber(null)
         }
@@ -17,11 +17,11 @@ export default function Login1(props) {
     const valid = () =>{
         var counter = 0;
         var index = 0;
-        if(Number==null){}
+        if(number==null){}
         else{
 
             props.worker.map((e,i)=>{
-                if(e.number==Number){
+                if(e.number==number){
                     counter++;
                     index = i;
                     props.Changeindex(index);
@@ -32,7 +32,7 @@ export default function Login1(props) {
                 props.changeFlag(true)
             }
             else{
-                alert(`worker ${Number} do not exist`)
+                alert(`worker ${number} do not exist`)
             }
         }
     }
@@ -44,7 +44,7 @@ export default function Login1(props) {
             <div>
                 {ChangeManger()}
                 </div>
-            <Link to={`/${Login}`}><button className='PrimeBtn' onClick={valid}>Enter</button></Link>
+            <Link to={`/${login}`}><button className='PrimeBtn' onClick={valid}>Enter</button></Link>
         </div>
     )
 }
